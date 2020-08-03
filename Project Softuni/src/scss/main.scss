@@ -1,0 +1,46 @@
+// ITCSS structure
+// Original post by Harry Roberts https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+
+// 01. Settings
+@import '01-settings/_settings.config.scss';
+@import '01-settings/_settings.animations.scss';
+@import '01-settings/_settings.breakpoints.scss';
+@import '01-settings/_settings.colors.scss';
+@import '01-settings/_settings.spacing.scss';
+@import '01-settings/_settings.typography.scss';
+@import '01-settings/_settings.z-layers.scss';
+
+// 02. Tools
+@import '../../node_modules/sass-mq/mq.scss';
+@import '02-tools/tools.animations.scss';
+@import '02-tools/tools.clearfix.scss';
+@import '02-tools/tools.hidden.scss';
+@import '02-tools/tools.on-event.scss';
+@import '02-tools/tools.placeholder.scss';
+@import '02-tools/tools.spacing.scss';
+
+// 03. Generic
+@import '../../node_modules/normalize.css/normalize.css';
+@import '03-generic/generic.selection.scss';
+
+// 04. Elements
+@import '04-elements/elements.all.scss';
+@import '04-elements/elements.body.scss';
+@import '04-elements/elements.html.scss';
+@import '04-elements/elements.links.scss';
+
+// 05. Objects
+@import '05-objects/objects.container.scss';
+@import '05-objects/objects.wrapper.scss';
+@import '05-objects/objects.modal.scss';
+
+
+// 06. Components
+@import "06-components/home/component.navbar";
+@import "06-components/home/component.jumbotron";
+@import "06-components/home/component.about";
+
+// 99. Utilities
+@import '99-utilities/utilities.clearfix';
+@import '99-utilities/utilities.text';
+@import '99-utilities/utilities.visibility';
