@@ -1,0 +1,117 @@
+@import "../../01-settings/settings.typography";
+@import "../../01-settings/settings.colors";
+
+.c-info{
+
+  display: grid;
+
+  grid-template-columns: 2fr 20px 2fr;
+
+  margin-left: 75px;
+  margin-right: 75px;
+
+
+  grid-column-gap: 32px;
+
+  margin-top: 106px;
+
+  @include for-phone-only{
+
+    grid-template-columns:none;
+
+    grid-template-rows: 2fr 30px 2fr;
+
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+
+}
+
+.c-info-content-title{
+
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  justify-items: start;
+
+
+  @include for-phone-only{
+
+    justify-items: center;
+  }
+
+  h1{
+
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+
+    margin-left: 31px;
+
+    @include for-phone-only{
+
+      margin-left: 0px;
+    }
+
+
+    color: $grey-700;
+  }
+
+}
+
+.c-info-content{
+
+  font-family: Lato,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+
+  color: $grey-700;
+
+  p{
+
+    margin-left: 64px;
+
+    @include for-phone-only{
+
+      margin-left: 20px;
+
+      margin-right: 20px;
+    }
+  }
+
+  &-img-desktop{
+
+    @include for-phone-only{
+
+      display: none;
+    }
+
+
+  }
+
+  &-img-mobile{
+
+    display: grid;
+
+    justify-self: centermobimob;
+
+    @include for-desktop-up{
+
+      display: none;
+
+
+
+    }
+
+  }
+
+}

@@ -39,8 +39,12 @@
 @import "06-components/home/component.navbar";
 @import "06-components/home/component.jumbotron";
 @import "06-components/home/component.about";
+@import "06-components/home/component.more-info";
+@import "06-components/home/component.program";
+@import "06-components/home/component.certificate";
+@import "06-components/home/component.info";
+@import "06-components/home/component.footer";
 
 // 99. Utilities
 @import '99-utilities/utilities.clearfix';
 @import '99-utilities/utilities.text';
-@import '99-utilities/utilities.visibility';

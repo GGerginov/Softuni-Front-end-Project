@@ -1,0 +1,115 @@
+@import "../../01-settings/settings.typography";
+@import "../../01-settings/settings.colors";
+
+
+.c-certificate{
+
+  margin-top: 64px;
+
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+
+  margin-left: 75px;
+
+
+  @include for-phone-only{
+
+    display: none;
+  }
+
+
+}
+
+.c-certificate-title-wrapper{
+
+  h1{
+
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+
+    margin-left: 32px;
+
+    color: $grey-700;
+  }
+
+
+  p{
+
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+
+    margin-left: 64px;
+
+
+    color: $grey-700;
+  }
+}
+
+
+.c-certificate-title{
+
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  justify-items: start;
+
+  padding-top: 60px;
+
+  img{
+
+    width: 32px;
+    height: 32px;
+
+    display: grid;
+    align-self: center;
+  }
+}
+
+
+.c-certificate-img-wrapper{
+
+  width: 363px;
+  height: 256px;
+
+  border-radius: 12px;
+
+  justify-self: end;
+  margin-right: 153px;
+
+  background-image: url("/Project Softuni/img/certificate.svg");
+  background-repeat: no-repeat;
+
+  display: grid;
+
+  h1{
+
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+
+    color: $grey-700;
+  }
+}
+
+
