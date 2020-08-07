@@ -7,13 +7,9 @@
 
   grid-template-columns: 2fr 20px 2fr;
 
-  margin-left: 75px;
-  margin-right: 75px;
-
-
   grid-column-gap: 32px;
 
-  margin-top: 106px;
+  margin: 106px 75px 148px;
 
   @include for-phone-only{
 

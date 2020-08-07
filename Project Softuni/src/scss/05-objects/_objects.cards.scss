@@ -1,0 +1,155 @@
+@import "../01-settings/settings.colors";
+
+.o-about-trainer-card{
+
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  &-img-wrapper{
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  &-text-wrapper{
+
+
+    &-title{
+
+      font-family: Montserrat,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+
+
+      /* Primary - 300 * */
+      color: $prymary-300;
+    }
+
+    &-secondary-title{
+
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: $grey-400;
+    }
+
+    &-text{
+
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+
+      color: $grey-700;
+    }
+
+  }
+}
+
+
+.o-trainer-card-container{
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  margin: 96px 188px;
+
+  grid-row-gap: 64px;
+
+}
+
+.o-trainer-card{
+
+  display: grid;
+
+
+  &-img-container{
+
+    display: grid;
+    justify-items: center;
+
+    position: relative;
+
+    &:hover{
+
+      &-hover{
+
+        opacity: 1;
+      }
+    }
+
+    img{
+
+
+      border-radius: 50%;
+    }
+
+    img:hover{
+
+      background: #FF9100;
+      opacity: 0.8;
+    }
+
+    &-hover{
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: $secondary-800;
+
+    }
+
+  }
+  &-title{
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 8px;
+    margin-top: 24px;
+
+
+    text-align: center;
+
+    color: $prymary-300;
+  }
+
+  &-secondary-title{
+
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    margin: 0px;
+
+    text-align: center;
+
+    color: $grey-400;
+
+  }
+
+
+
+
+
+}

@@ -153,6 +153,110 @@ a:hover, a:active, a:focus {
 }
 
 /* ==========================================================================
+   #COLOR-VARIABLES
+   ========================================================================== */
+.o-about-trainer-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.o-about-trainer-card-img-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.o-about-trainer-card-text-wrapper-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  /* Primary - 300 * */
+  color: #41BEAD;
+}
+.o-about-trainer-card-text-wrapper-secondary-title {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B2B2B2;
+}
+.o-about-trainer-card-text-wrapper-text {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565656;
+}
+
+.o-trainer-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 96px 188px;
+  grid-row-gap: 64px;
+}
+
+.o-trainer-card {
+  display: grid;
+}
+.o-trainer-card-img-container {
+  display: grid;
+  justify-items: center;
+  position: relative;
+}
+.o-trainer-card-img-container:hover-hover {
+  opacity: 1;
+}
+.o-trainer-card-img-container img {
+  border-radius: 50%;
+}
+.o-trainer-card-img-container img:hover {
+  background: #FF9100;
+  opacity: 0.8;
+}
+.o-trainer-card-img-container-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #FF9100;
+}
+.o-trainer-card-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  margin-top: 24px;
+  text-align: center;
+  color: #41BEAD;
+}
+.o-trainer-card-secondary-title {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0px;
+  text-align: center;
+  color: #B2B2B2;
+}
+
+.o-about-trainer-bottom-dots {
+  display: grid;
+}
+.o-about-trainer-bottom-dots img {
+  display: grid;
+  justify-self: center;
+}
+
+/* ==========================================================================
    #TYPOGRAPHY-VARIABLES
    ========================================================================== */
 /* ==========================================================================
@@ -274,7 +378,7 @@ a:hover, a:active, a:focus {
 /* ==========================================================================
    #TYPOGRAPHY-VARIABLES
    ========================================================================== */
-.c-jumbotron {
+.c-jumbotron-blue {
   width: 100%;
   height: 302px;
   background: #44A9F8;
@@ -285,7 +389,7 @@ a:hover, a:active, a:focus {
   margin: 0 auto;
   justify-content: center;
 }
-.c-jumbotron .c-label {
+.c-jumbotron-blue-label {
   padding: 4px 8px;
   width: 89px;
   height: 22px;
@@ -297,14 +401,14 @@ a:hover, a:active, a:focus {
   margin: 0 auto;
 }
 @media (max-width: 599px) {
-  .c-jumbotron .c-label {
+  .c-jumbotron-blue-label {
     margin-top: 64px;
     font-size: 12px;
     line-height: 14px;
     position: static;
   }
 }
-.c-jumbotron .c-label p {
+.c-jumbotron-blue-label p {
   position: relative;
   width: 73px;
   height: 14px;
@@ -324,7 +428,7 @@ a:hover, a:active, a:focus {
   align-self: center;
   margin: 10px 0px;
 }
-.c-jumbotron h1 {
+.c-jumbotron-blue h1 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -336,13 +440,85 @@ a:hover, a:active, a:focus {
   bottom: 100px;
 }
 @media (max-width: 599px) {
-  .c-jumbotron h1 {
+  .c-jumbotron-blue h1 {
     font-size: 30px;
     line-height: 36px;
     margin-left: 20px;
     margin-right: 20px;
     position: static;
   }
+}
+.c-jumbotron-orange {
+  width: 100%;
+  height: 256px;
+  background-color: #FFB402;
+  color: white;
+  display: grid;
+}
+.c-jumbotron-orange h1 {
+  padding-top: 64px;
+  margin: 0;
+  justify-self: center;
+}
+.c-jumbotron-orange p {
+  justify-self: center;
+  text-align: center;
+  padding-bottom: 64px;
+  width: 60%;
+}
+
+.c-jumbotron-footer {
+  min-height: 400px;
+  background-color: #66B9F8;
+  display: grid;
+}
+.c-jumbotron-footer-text-container {
+  display: grid;
+  justify-self: center;
+  grid-template-rows: auto 1fr 1fr;
+}
+.c-jumbotron-footer-text-container-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  justify-self: center;
+  margin-top: 64px;
+}
+.c-jumbotron-footer-text-container-secondary-title {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  justify-self: center;
+}
+.c-jumbotron-footer-text-container-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 32px;
+  height: 52px;
+  justify-items: center;
+}
+.c-jumbotron-footer-text-container-input-container-input {
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 52px;
+  background-color: #66B9F8;
+  color: white;
+}
+.c-jumbotron-footer-text-container-input-container-submit {
+  width: 146px;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  background: #FF9100;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
 }
 
 /* ==========================================================================
@@ -402,7 +578,6 @@ a:hover, a:active, a:focus {
     width: 100%;
   }
 }
-
 .c-about-block {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -477,7 +652,6 @@ a:hover, a:active, a:focus {
     display: grid;
   }
 }
-
 .c-about-block-extra {
   grid-template-columns: auto auto;
   height: 100%;
@@ -549,7 +723,6 @@ a:hover, a:active, a:focus {
   align-items: center;
   color: #FF9100;
 }
-
 .c-about-block-extra-wrapper {
   display: grid;
   align-self: center;
@@ -563,6 +736,13 @@ a:hover, a:active, a:focus {
     grid-template-columns: none;
     grid-template-rows: auto auto auto auto;
   }
+}
+
+.c-about-trainers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
+  margin: 96px 75px;
 }
 
 .c-about-block-wrapper {
@@ -861,10 +1041,8 @@ a:hover, a:active, a:focus {
 .c-info {
   display: grid;
   grid-template-columns: 2fr 20px 2fr;
-  margin-left: 75px;
-  margin-right: 75px;
   grid-column-gap: 32px;
-  margin-top: 106px;
+  margin: 106px 75px 148px;
 }
 @media (max-width: 599px) {
   .c-info {
@@ -940,9 +1118,6 @@ a:hover, a:active, a:focus {
 /* ==========================================================================
    #COLOR-VARIABLES
    ========================================================================== */
-.c-footer {
-  margin-top: 148px;
-}
 @media (max-width: 599px) {
   .c-footer {
     height: 100%;

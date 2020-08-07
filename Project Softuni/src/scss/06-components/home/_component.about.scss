@@ -76,257 +76,276 @@
 
     }
   }
-}
 
-
-.c-about-block {
-
-  display: grid;
-
-  grid-template-columns: 1fr 3fr;
-
-  align-self: center;
-
-  position: relative;
-
-  bottom: 60px;
-  margin: 0 auto;
-
-
-  width: 1300px;
-  height: 123px;
-  background-image: url("/Project Softuni/img/section.svg ");;
-
-  @include for-phone-only{
-
-    background-image: url("/Project Softuni/img/card_mobile.svg ");;
-
-    grid-template-rows: auto auto;
-
-    grid-template-columns: none;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 341px;
-    height: 568px;
-
-  }
-
-  &-button-wrapper{
-
-    @include for-phone-only {
-      display: grid;
-      width: 341px;
-      margin-top: 46px;
-    }
-  }
-
-  &-button {
+  &-block {
 
     display: grid;
 
+    grid-template-columns: 1fr 3fr;
+
     align-self: center;
 
-    padding: 14px 32px;
-    margin: 32px 64px;
+    position: relative;
 
-    width: 163px;
-    height: 48px;
+    bottom: 60px;
+    margin: 0 auto;
 
-    border: 0;
-    background: $secondary-800;
-    /* 4 dp - buttons */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 100px;
 
+    width: 1300px;
+    height: 123px;
+    background-image: url("/Project Softuni/img/section.svg ");;
 
     @include for-phone-only{
 
-      margin: 0 auto;
-      width: 287px;
-      height: 52px;
+      background-image: url("/Project Softuni/img/card_mobile.svg ");;
 
-      align-self: normal;
+      grid-template-rows: auto auto;
+
+      grid-template-columns: none;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      width: 341px;
+      height: 568px;
 
     }
 
+    &-button-wrapper{
 
+      @include for-phone-only {
+        display: grid;
+        width: 341px;
+        margin-top: 46px;
+      }
+    }
 
-    p{
+    &-button {
 
+      display: grid;
 
-      height: 20px;
-
-
-
-      font-family: Lato,sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 20px;
-      /* identical to box height, or 125% */
-      display: flex;
-      align-items: center;
-      text-align: center;
-      text-transform: uppercase;
-
-      color: #FFFFFF;
-
-
-      /* Inside Auto Layout */
-      flex: none;
-      order: 0;
       align-self: center;
-      margin: 0px 0px;
+
+      padding: 14px 32px;
+      margin: 32px 64px;
+
+      width: 163px;
+      height: 48px;
+
+      border: 0;
+      background: $secondary-800;
+      /* 4 dp - buttons */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 100px;
+
 
       @include for-phone-only{
 
-        display: grid;
+        margin: 0 auto;
+        width: 287px;
+        height: 52px;
+
+        align-self: normal;
+
+      }
+
+
+
+      p{
+
+
+        height: 20px;
+
+
+
+        font-family: Lato,sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height, or 125% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        align-self: center;
+        margin: 0px 0px;
+
+        @include for-phone-only{
+
+          display: grid;
+        }
       }
     }
   }
-}
 
-.c-about-block-extra {
+  &-block-extra {
 
-  grid-template-columns: auto auto;
-  height: 100%;
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 24px;
-    left: 604px;
-    top: 364px;
-
-    background: $grey-100;
-  }
-
-  display: grid;
-
-  grid-column-gap: 24px;
-
-  @include for-phone-only{
-
-    justify-items: flex-start;
-    grid-template-columns: auto 1fr;
-  }
-
-
-  &-icon {
-
-    display: grid;
-    align-self: center;
-
+    grid-template-columns: auto auto;
     height: 100%;
-    width: 32px;
 
-    @include for-phone-only{
+    &:after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 24px;
+      left: 604px;
+      top: 364px;
 
-      margin-right: 24px;
-
+      background: $grey-100;
     }
-
-
-  }
-
-
-  &-text-wrapper {
 
     display: grid;
 
-    grid-template-rows: 1fr 1fr;
-
-    grid-row-gap: 6px;
-
-    width: auto;
+    grid-column-gap: 24px;
 
     @include for-phone-only{
 
-      width: fit-content;
+      justify-items: flex-start;
+      grid-template-columns: auto 1fr;
     }
 
-    .c-about-block-extra-title {
 
+    &-icon {
+
+      display: grid;
       align-self: center;
 
+      height: 100%;
+      width: 32px;
 
-      margin: 0;
+      @include for-phone-only{
 
-      p {
+        margin-right: 24px;
 
-        height: 22px;
-
-
-        font-family: Lato, sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 22px;
-
-        margin: 0;
-
-        display: flex;
-        align-items: center;
-
-        color: $grey-700;
       }
+
+
     }
 
 
-    .c-about-block-extra-text {
+    &-text-wrapper {
 
+      display: grid;
 
-      p {
+      grid-template-rows: 1fr 1fr;
 
-        height: 24px;
+      grid-row-gap: 6px;
 
-        font-family: Montserrat, sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
+      width: auto;
+
+      @include for-phone-only{
+
+        width: fit-content;
+      }
+
+      .c-about-block-extra-title {
+
+        align-self: center;
+
 
         margin: 0;
 
-        display: flex;
-        align-items: center;
+        p {
 
-        color: $secondary-800;
+          height: 22px;
+
+
+          font-family: Lato, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+
+          margin: 0;
+
+          display: flex;
+          align-items: center;
+
+          color: $grey-700;
+        }
+      }
+
+
+      .c-about-block-extra-text {
+
+
+        p {
+
+          height: 24px;
+
+          font-family: Montserrat, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 24px;
+
+          margin: 0;
+
+          display: flex;
+          align-items: center;
+
+          color: $secondary-800;
+        }
       }
     }
+
   }
 
+
+  &-block-extra-wrapper {
+
+    display: grid;
+
+    align-self: center;
+
+
+
+    grid-template-columns: auto auto auto auto;
+
+    width: 100%;
+
+    @include for-phone-only{
+
+      //grid-template-rows: auto auto auto auto;
+      //justify-items: flex-start;
+      //grid-row-gap: 40px;
+
+      margin-left: 24px;
+
+      grid-row-gap: 40px;
+
+      grid-template-columns: none;
+
+      grid-template-rows: auto auto auto auto;
+
+    }
+
+  }
+
+
 }
-.c-about-block-extra-wrapper {
+
+.c-about-trainers{
+
 
   display: grid;
 
-  align-self: center;
+  grid-template-columns: 1fr 1fr;
+
+  grid-column-gap: 32px;
 
 
-
-  grid-template-columns: auto auto auto auto;
-
-  width: 100%;
-
-  @include for-phone-only{
-
-    //grid-template-rows: auto auto auto auto;
-    //justify-items: flex-start;
-    //grid-row-gap: 40px;
-
-    margin-left: 24px;
-
-    grid-row-gap: 40px;
-
-    grid-template-columns: none;
-
-    grid-template-rows: auto auto auto auto;
-
-  }
-
+  margin: 96px 75px;
 }
+
+
+
 .c-about-block-wrapper{
 
 
