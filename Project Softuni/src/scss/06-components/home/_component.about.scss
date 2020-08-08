@@ -40,7 +40,7 @@
 
     }
 
-    p{
+    &-text{
 
       font-family: Lato,sans-serif;
       font-style: normal;
@@ -59,7 +59,7 @@
     align-self: center;
     justify-self: end;
 
-    img{
+    &-img{
 
       width: 440px;
       height: 248px;
@@ -94,6 +94,12 @@
     width: 1300px;
     height: 123px;
     background-image: url("/Project Softuni/img/section.svg ");;
+
+    &-wrapper{
+
+      position: relative;
+
+    }
 
     @include for-phone-only{
 
@@ -219,6 +225,8 @@
       height: 100%;
       width: 32px;
 
+      align-items: center;
+
       @include for-phone-only{
 
         margin-right: 24px;
@@ -312,10 +320,6 @@
 
     @include for-phone-only{
 
-      //grid-template-rows: auto auto auto auto;
-      //justify-items: flex-start;
-      //grid-row-gap: 40px;
-
       margin-left: 24px;
 
       grid-row-gap: 40px;
@@ -328,29 +332,33 @@
 
   }
 
+  &-trainers{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-column-gap: 32px;
+
+
+    margin: 96px 75px;
+
+
+
+    @include for-phone-only{
+
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr;
+
+      margin: 48px 0 0 0;
+
+    }
+
+
+  }
 
 }
 
-.c-about-trainers{
-
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  grid-column-gap: 32px;
-
-
-  margin: 96px 75px;
-}
-
-
-
-.c-about-block-wrapper{
-
-
-  position: relative;
-}
 
 
 

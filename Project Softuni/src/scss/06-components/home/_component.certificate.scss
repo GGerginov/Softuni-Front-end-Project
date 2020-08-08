@@ -21,95 +21,98 @@
   }
 
 
-}
+  &-title-wrapper{
 
-.c-certificate-title-wrapper{
+    h1{
 
-  h1{
-
-    font-family: Montserrat,sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
+      font-family: Montserrat,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      display: flex;
+      align-items: center;
 
 
-    margin-left: 32px;
+      margin-left: 32px;
 
-    color: $grey-700;
+      color: $grey-700;
+    }
+
+
+    p{
+
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+
+
+      margin-left: 64px;
+
+
+      color: $grey-700;
+    }
+
   }
 
-
-  p{
-
-    font-family: Lato,sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-
-
-    margin-left: 64px;
-
-
-    color: $grey-700;
-  }
-}
-
-
-.c-certificate-title{
-
-  display: grid;
-  grid-template-columns: 35px 1fr;
-  justify-items: start;
-
-  padding-top: 60px;
-
-  img{
-
-    width: 32px;
-    height: 32px;
+  &-title{
 
     display: grid;
-    align-self: center;
+    grid-template-columns: 35px 1fr;
+    justify-items: start;
+
+    padding-top: 60px;
+
+    img{
+
+      width: 32px;
+      height: 32px;
+
+      display: grid;
+      align-self: center;
+    }
+
   }
-}
 
 
-.c-certificate-img-wrapper{
+  &-img-wrapper{
 
-  width: 363px;
-  height: 256px;
+    width: 363px;
+    height: 256px;
 
-  border-radius: 12px;
+    border-radius: 12px;
 
-  justify-self: end;
-  margin-right: 153px;
+    justify-self: end;
+    margin-right: 153px;
 
-  background-image: url("/Project Softuni/img/certificate.svg");
-  background-repeat: no-repeat;
-
-  display: grid;
-
-  h1{
-
-    font-family: Lato,sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    background-image: url("/Project Softuni/img/certificate.svg");
+    background-repeat: no-repeat;
 
     display: grid;
-    align-items: center;
-    text-align: center;
+
+    h1{
+
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+
+      display: grid;
+      align-items: center;
+      text-align: center;
 
 
-    color: $grey-700;
+      color: $grey-700;
+    }
+
   }
 }
+
+
 
 

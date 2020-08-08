@@ -18,147 +18,130 @@
    height: auto;
 
   }
-}
 
-.c-program-title-wrapper{
+  &-title-wrapper{
 
-  display: grid;
-  grid-template-columns: 35px 1fr;
-  justify-items: start;
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    justify-items: start;
 
-  margin-left: 75px;
-  padding-top: 60px;
-
-
-  @include for-phone-only{
+    margin-left: 75px;
+    padding-top: 60px;
 
 
-    margin-left: 0px;
-    padding-top: 0px;
+    @include for-phone-only{
 
+
+      margin-left: 0px;
+      padding-top: 0px;
+
+    }
+
+    &-img-desktop{
+
+
+      height: 24px;
+      width: 32px;
+      background: linear-gradient(0deg, #FD5900 0%, #FFDE00 100%);
+
+      display: flex;
+      align-self: center;
+    }
+
+
+
+
+    h1{
+
+      font-family: Montserrat,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+
+      color: $grey-700;
+
+      margin-left: 30px;
+    }
   }
 
-  &-img-desktop{
+  &-content-wrapper{
+
+    display: grid;
+
+    grid-template-columns: 675px;
+
+    grid-template-rows: auto;
+
+    margin-left: 138px;
 
 
-    height: 24px;
-    width: 32px;
-    background: linear-gradient(0deg, #FD5900 0%, #FFDE00 100%);
+    @include for-phone-only{
 
-    display: flex;
-    align-self: center;
+      grid-template-columns: none;
+
+      margin: 20px 0;
+
+    }
+
+    p{
+
+
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+
+      display: flex;
+      align-items: center;
+
+
+      color: $grey-700;
+    }
+
+    h1{
+
+      font-family: Lato,sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+
+      display: flex;
+      align-items: center;
+
+
+      color: $grey-700;
+    }
   }
 
+  &-input{
 
+    background: #FFFFFF;
+    border-radius: 6px;
 
-
-  h1{
-
-    font-family: Montserrat,sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-
-    color: $grey-700;
-
-    margin-left: 30px;
-  }
-}
-
-
-.c-program-content-wrapper{
-
-
-  display: grid;
-
-  grid-template-columns: 675px;
-
-  grid-template-rows: auto;
-
-  margin-left: 138px;
-
-
-  @include for-phone-only{
-
-    grid-template-columns: none;
-
-    margin: 20px 0;
-
-  }
-
-  p{
-
-
-    font-family: Lato,sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-
-    display: flex;
-    align-items: center;
-
-
-    color: $grey-700;
-  }
-
-  h1{
+    height: 50px;
 
     font-family: Lato,sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-
     display: flex;
     align-items: center;
 
+    width: 100%;
 
     color: $grey-700;
-  }
-}
 
-.c-program-input{
-
-  background: #FFFFFF;
-  border-radius: 6px;
-
-  height: 50px;
-
-  font-family: Lato,sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  display: flex;
-  align-items: center;
-
-  width: 100%;
-
-  color: $grey-700;
-}
-
-.c-program-input-wrapper{
-
-  position: relative;
-
-  margin-bottom: 16px;
-
-  img{
-
-    position: absolute;
-
-    top: 22px;
-
-    right: 20px;
   }
 
-  &-last{
+  &-input-wrapper{
 
     position: relative;
 
-    margin-bottom: 64px;
+    margin-bottom: 16px;
 
     img{
 
@@ -168,30 +151,50 @@
 
       right: 20px;
     }
+
+    &-last{
+
+      position: relative;
+
+      margin-bottom: 64px;
+
+      img{
+
+        position: absolute;
+
+        top: 22px;
+
+        right: 20px;
+      }
+    }
+  }
+
+  &-img-wrapper{
+
+    position: absolute;
+
+    top: 250px;
+    right: 137px;
+
+
+    @include for-phone-only{
+
+      display: none;
+
+
+    }
+
+  }
+
+  &-general-wrapper{
+
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
-.c-program-img-wrapper{
-
-  position: absolute;
-
-  top: 250px;
-  right: 137px;
 
 
-  @include for-phone-only{
-
-    display: none;
-
-
-  }
-}
-
-.c-program-general-wrapper{
-
-  margin-left: 20px;
-  margin-right: 20px;
-}
 
 
 

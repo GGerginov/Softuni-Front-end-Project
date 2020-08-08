@@ -3,11 +3,31 @@
 
   display: grid;
 
-  img{
+
+
+  &-desktop{
 
     display: grid;
 
     justify-self: center;
+
+    @include for-phone-only{
+
+      display: none;
+    }
+  }
+
+  &-mobile{
+
+    display: none;
+
+    @include for-phone-only{
+
+      display: block;
+
+
+    }
+
   }
 
 
