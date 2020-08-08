@@ -1,5 +1,6 @@
 @import "../../01-settings/settings.colors";
 @import "../../01-settings/settings.typography";
+@import "../../01-settings/settings.animations";
 
 
 .c-jumbotron {
@@ -445,9 +446,6 @@
 
       &-button{
 
-
-
-
         display: grid;
 
         justify-self: center;
@@ -480,6 +478,17 @@
           width: 50%;
 
           margin:0 auto;
+
+
+
+          transition: background-color 1s, color ease-out;
+
+          &:hover{
+
+            color: white;
+            background-color: $secondary-800;
+
+          }
         }
 
 

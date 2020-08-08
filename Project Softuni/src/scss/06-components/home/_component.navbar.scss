@@ -1,6 +1,7 @@
 @import "../../01-settings/settings.typography";
 @import "../../01-settings/settings.colors";
 @import "../../01-settings/settings.breakpoints";
+@import "../../01-settings/settings.animations";
 
 .c-navbar{
 
@@ -31,6 +32,11 @@
   height: 74px;
 
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+
+  .container {
+    width: 100%;
+  }
+
 
 
   &-logo-wrapper{
@@ -100,11 +106,7 @@
 
     &-item{
 
-      position: static;
-      //height: 16px;
-      left: 12px;
-      right: 12px;
-      top: calc(50% - 16px/2);
+
 
       padding: 29px 12px;
       font-family: 'Lato', sans-serif;
@@ -159,6 +161,16 @@
       width: 82px;
       height: 36px;
 
+      transition: background-color 1s, color ease-out;
+
+      &:hover{
+
+        color: $secondary-800;
+        background-color: white;
+
+        border: 1px solid $secondary-800;
+
+      }
 
 
       border: 0;

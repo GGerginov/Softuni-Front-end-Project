@@ -80,7 +80,9 @@
 
         &:hover{
 
-          color: $primary-300;
+          filter: invert(7%) sepia(79%) saturate(1432%) hue-rotate(70deg) brightness(118%) contrast(300%);
+
+          cursor: pointer;
         }
 
       }
